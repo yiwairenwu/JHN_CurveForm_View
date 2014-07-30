@@ -21,11 +21,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _fistArray = @[[NSNumber numberWithInt:0],[NSNumber numberWithInt:32],[NSNumber numberWithInt:22],[NSNumber numberWithInt:-12],[NSNumber numberWithInt:32]];
-    _twoArray = @[[NSNumber numberWithInt:20],[NSNumber numberWithInt:42],[NSNumber numberWithInt:25],[NSNumber numberWithInt:10],[NSNumber numberWithInt:32]];
+    //[self.view setBackgroundColor:[UIColor redColor]];透明的打开你就知道怎么回事了在相同位置让美工给你做个背景就ok
+    _fistArray = @[[NSNumber numberWithInt:248888],[NSNumber numberWithInt:250000],[NSNumber numberWithInt:265520],[NSNumber numberWithInt:240300],[NSNumber numberWithInt:258000]];
+    _twoArray = @[[NSNumber numberWithInt:280000],[NSNumber numberWithInt:275000],[NSNumber numberWithInt:270000],[NSNumber numberWithInt:260000],[NSNumber numberWithInt:274000]];
     _jhn = [[JHN_CurveForm_View alloc]init];
+    [_jhn setBackgroundColor:[UIColor yellowColor]];
     _jhn.delegate = self;
-    [_jhn setFrame:CGRectMake(10, 50, 300, 200)];
+    [_jhn setFrame:CGRectMake(35, 50, 280, 200)];
     
     
     [self.view addSubview:_jhn];
@@ -54,24 +56,29 @@
 -(void)btnChick:(UIButton *)sender
 {
     jhnBtn *btn = (jhnBtn *)sender;
-    
-    UIAlertView *aler = [[UIAlertView alloc]initWithTitle:@"代表月亮消灭你" message:[NSString stringWithFormat:@"我是%d号线的%d号按钮我得位置在x:%f,y:%f",btn.indexLine,btn.indexBtn,btn.frame.origin.x,btn.frame.origin.y ] delegate:self cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil];
+    int index =0;
+    if (btn.indexLine==0) {
+        index = 1;
+    }
+    jhnBtn *btn0=(jhnBtn *)[_jhn buttonForLineIndex:index BtnIndex:btn.indexBtn];
+    UIAlertView *aler = [[UIAlertView alloc]initWithTitle:@"代表月亮消灭你" message:[NSString stringWithFormat:@"我是%d号线的%d号按钮我得位置在x:%f,y:%f\n我是%d号线的%d号按钮我得位置在x:%f,y:%f",btn.indexLine,btn.indexBtn,btn.frame.origin.x,btn.frame.origin.y,btn0.indexLine,btn0.indexBtn,btn0.frame.origin.x,btn0.frame.origin.y ] delegate:self cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil];
     [aler show];
+    //可以根据坐标添加弹出框
 }
 //返回y轴数据起始点例如车辆第-数组的销量是20万则返回200000;若是温度范围在-20到+20且第一数组为-10度则返回10,0度则返回20,10度则返回30;
 -(double)YStartForCurveFormView:(JHN_CurveForm_View *)JHN_CurveForm_View
 {
-    return 50;
+    return -240000;
 }
 //返回y轴数据范围例如车辆销量是以0到50万则返回500000;若是温度范围在-20到+20则返回40;
 -(double)YScopeForCurveFormView:(JHN_CurveForm_View *)JHN_CurveForm_View
 {
-    return 100;
+    return 50000;
 }
 //返回x轴每组数据间距;
 -(double)XlongForCurveFormView:(JHN_CurveForm_View *)JHN_CurveForm_View
 {
-    return 300/(_fistArray.count-1);
+    return _jhn.frame.size.width/(_fistArray.count-1);
 }
 //返回数组
 -(NSArray *)CurveFormView:(JHN_CurveForm_View *)JHN_CurveForm_View ArrayForInt:(int)index{

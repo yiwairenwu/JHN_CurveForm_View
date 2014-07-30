@@ -5,7 +5,8 @@
 
 @interface JHN_CurveForm_View ()
 {
-    NSMutableArray *_Array;
+    
+    NSMutableDictionary *_BtnDict;
 }
 @end
 @implementation JHN_CurveForm_View
@@ -15,8 +16,9 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.backgroundColor = [UIColor yellowColor];
+        self.backgroundColor = [UIColor clearColor];
         self.LineType = LineFormType;
+        _BtnDict = [[NSMutableDictionary alloc]init];
     }
     return self;
 }
@@ -34,7 +36,8 @@
     for (int num = 0; num<index; num++) {
         NSArray *_LineArray = [_delegate CurveFormView:self ArrayForInt:num];
     
-    
+        NSMutableArray *_btnArr = [[NSMutableArray alloc]init];
+        NSString *key = [NSString stringWithFormat:@"%d",num];
       
       
 
@@ -55,6 +58,7 @@
             UIButton *btn0 = [_delegate CurveFormView:self ButtonForLineId:num WithButtonId:0];
              btn0.frame = CGRectMake(nextX-7, downToXline - [[_LineArray objectAtIndex:0] doubleValue]*coefficient-7, 15, 15);
             [self addSubview:btn0];
+            [_btnArr addObject:btn0];
         }
         
        
@@ -65,9 +69,10 @@
         for (int i = 1; i < [_LineArray count]; i++) {
             
             if (_delegate&&[_delegate respondsToSelector:@selector(CurveFormView:ButtonForLineId:WithButtonId:)]) {
-                UIButton *btn = [_delegate CurveFormView:self ButtonForLineId:num WithButtonId:0];
+                UIButton *btn = [_delegate CurveFormView:self ButtonForLineId:num WithButtonId:i];
                  btn.frame = CGRectMake(nextX+distanceNextYline-7,downToXline - [[_LineArray objectAtIndex:i] doubleValue]*coefficient-7, 15, 15);
                 [self addSubview:btn];
+                [_btnArr addObject:btn];
             }
           
             switch (_LineType) {
@@ -94,6 +99,7 @@
             nextX +=distanceNextYline;
             corectPointer1 = downToXline - [[_LineArray objectAtIndex:i] doubleValue]*coefficient;
         }
+        [_BtnDict setValue:_btnArr forKey:key];
         UIColor *color;
         if (_delegate&&[_delegate respondsToSelector:@selector(CurveFormView:ColorForInt:)]) {
 
@@ -115,6 +121,11 @@
     
     
 }
-
+-(UIButton *)buttonForLineIndex:(int)LineIndex BtnIndex:(int)BtnIndex
+{
+    NSArray *arr = [_BtnDict objectForKey:[NSString stringWithFormat:@"%d",LineIndex]];
+    UIButton *btn = (UIButton *)[arr objectAtIndex:BtnIndex];
+    return btn;
+}
 
 @end

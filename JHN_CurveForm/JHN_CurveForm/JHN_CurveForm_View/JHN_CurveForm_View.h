@@ -31,4 +31,6 @@ typedef enum {
 @interface JHN_CurveForm_View : UIView
 @property(nonatomic,assign)id<JHNCurveFormDelegate> delegate;
 @property(assign,nonatomic)LineType LineType;//你要直的还是弯的
+
+-(UIButton *)buttonForLineIndex:(int)LineIndex BtnIndex:(int)BtnIndex;
 @end
