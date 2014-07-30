@@ -2,6 +2,10 @@
 
 #import <UIKit/UIKit.h>
 @class JHN_CurveForm_View;
+typedef enum {
+    LineFormType = 0,
+    CurveFormType
+} LineType;
 @protocol JHNCurveFormDelegate<NSObject>
 //必需实现的方法
 //返回数组数据
@@ -13,6 +17,8 @@
 //返回x轴每组数据间距;
 -(double)XlongForCurveFormView:(JHN_CurveForm_View *)JHN_CurveForm_View;
 @optional
+//这个用了就有按钮
+-(UIButton *)CurveFormView:(JHN_CurveForm_View *)JHN_CurveForm_View ButtonForLineId:(int)indexLine WithButtonId:(int)indexBtn;
 //非必写回调
 //返回同一页面内需要的曲线数量用于多曲线比较
 //默认为1条
@@ -24,5 +30,5 @@
 
 @interface JHN_CurveForm_View : UIView
 @property(nonatomic,assign)id<JHNCurveFormDelegate> delegate;
-
+@property(assign,nonatomic)LineType LineType;//你要直的还是弯的
 @end

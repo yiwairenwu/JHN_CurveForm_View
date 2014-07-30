@@ -22,6 +22,8 @@
 		5DDA656C19889CE100E510C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DDA656A19889CE100E510C4 /* InfoPlist.strings */; };
 		5DDA656E19889CE100E510C4 /* JHN_CurveFormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDA656D19889CE100E510C4 /* JHN_CurveFormTests.m */; };
 		5DDA65811988A60600E510C4 /* JHN_CurveForm_View.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDA65801988A60600E510C4 /* JHN_CurveForm_View.m */; };
+		5DDA65831988CC7600E510C4 /* sb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DDA65821988CC7600E510C4 /* sb.png */; };
+		5DDA65861988D5D200E510C4 /* jhnBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDA65851988D5D200E510C4 /* jhnBtn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		5DDA656D19889CE100E510C4 /* JHN_CurveFormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHN_CurveFormTests.m; sourceTree = "<group>"; };
 		5DDA657F1988A60600E510C4 /* JHN_CurveForm_View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHN_CurveForm_View.h; sourceTree = "<group>"; };
 		5DDA65801988A60600E510C4 /* JHN_CurveForm_View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHN_CurveForm_View.m; sourceTree = "<group>"; };
+		5DDA65821988CC7600E510C4 /* sb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sb.png; sourceTree = "<group>"; };
+		5DDA65841988D5D200E510C4 /* jhnBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jhnBtn.h; sourceTree = "<group>"; };
+		5DDA65851988D5D200E510C4 /* jhnBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jhnBtn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,8 +164,11 @@
 		5DDA657E1988A60600E510C4 /* JHN_CurveForm_View */ = {
 			isa = PBXGroup;
 			children = (
+				5DDA65821988CC7600E510C4 /* sb.png */,
 				5DDA657F1988A60600E510C4 /* JHN_CurveForm_View.h */,
 				5DDA65801988A60600E510C4 /* JHN_CurveForm_View.m */,
+				5DDA65841988D5D200E510C4 /* jhnBtn.h */,
+				5DDA65851988D5D200E510C4 /* jhnBtn.m */,
 			);
 			path = JHN_CurveForm_View;
 			sourceTree = "<group>";
@@ -244,6 +252,7 @@
 			files = (
 				5DDA655B19889CE100E510C4 /* Images.xcassets in Resources */,
 				5DDA654D19889CE100E510C4 /* InfoPlist.strings in Resources */,
+				5DDA65831988CC7600E510C4 /* sb.png in Resources */,
 				5DDA655619889CE100E510C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DDA654F19889CE100E510C4 /* main.m in Sources */,
+				5DDA65861988D5D200E510C4 /* jhnBtn.m in Sources */,
 				5DDA65811988A60600E510C4 /* JHN_CurveForm_View.m in Sources */,
 				5DDA655919889CE100E510C4 /* JHNViewController.m in Sources */,
 				5DDA655319889CE100E510C4 /* JHNAppDelegate.m in Sources */,
@@ -471,6 +481,7 @@
 				5DDA657319889CE100E510C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DDA657419889CE100E510C4 /* Build configuration list for PBXNativeTarget "JHN_CurveFormTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +490,7 @@
 				5DDA657619889CE100E510C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
