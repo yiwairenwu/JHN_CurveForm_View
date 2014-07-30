@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DDA654319889CE100E510C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DDA654219889CE100E510C4 /* Foundation.framework */; };
+		5DDA654519889CE100E510C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DDA654419889CE100E510C4 /* CoreGraphics.framework */; };
+		5DDA654719889CE100E510C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DDA654619889CE100E510C4 /* UIKit.framework */; };
+		5DDA654D19889CE100E510C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DDA654B19889CE100E510C4 /* InfoPlist.strings */; };
+		5DDA654F19889CE100E510C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDA654E19889CE100E510C4 /* main.m */; };
+		5DDA655319889CE100E510C4 /* JHNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDA655219889CE100E510C4 /* JHNAppDelegate.m */; };
+		5DDA655619889CE100E510C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DDA655419889CE100E510C4 /* Main.storyboard */; };
+		5DDA655919889CE100E510C4 /* JHNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDA655819889CE100E510C4 /* JHNViewController.m */; };
+		5DDA655B19889CE100E510C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DDA655A19889CE100E510C4 /* Images.xcassets */; };
+		5DDA656219889CE100E510C4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DDA656119889CE100E510C4 /* XCTest.framework */; };
+		5DDA656319889CE100E510C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DDA654219889CE100E510C4 /* Foundation.framework */; };
+		5DDA656419889CE100E510C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DDA654619889CE100E510C4 /* UIKit.framework */; };
+		5DDA656C19889CE100E510C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DDA656A19889CE100E510C4 /* InfoPlist.strings */; };
+		5DDA656E19889CE100E510C4 /* JHN_CurveFormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDA656D19889CE100E510C4 /* JHN_CurveFormTests.m */; };
+		5DDA65811988A60600E510C4 /* JHN_CurveForm_View.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDA65801988A60600E510C4 /* JHN_CurveForm_View.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DDA656519889CE100E510C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DDA653719889CE100E510C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DDA653E19889CE100E510C4;
+			remoteInfo = JHN_CurveForm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5DDA653F19889CE100E510C4 /* JHN_CurveForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHN_CurveForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DDA654219889CE100E510C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5DDA654419889CE100E510C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5DDA654619889CE100E510C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5DDA654A19889CE100E510C4 /* JHN_CurveForm-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JHN_CurveForm-Info.plist"; sourceTree = "<group>"; };
+		5DDA654C19889CE100E510C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5DDA654E19889CE100E510C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5DDA655019889CE100E510C4 /* JHN_CurveForm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JHN_CurveForm-Prefix.pch"; sourceTree = "<group>"; };
+		5DDA655119889CE100E510C4 /* JHNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHNAppDelegate.h; sourceTree = "<group>"; };
+		5DDA655219889CE100E510C4 /* JHNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHNAppDelegate.m; sourceTree = "<group>"; };
+		5DDA655519889CE100E510C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DDA655719889CE100E510C4 /* JHNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHNViewController.h; sourceTree = "<group>"; };
+		5DDA655819889CE100E510C4 /* JHNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHNViewController.m; sourceTree = "<group>"; };
+		5DDA655A19889CE100E510C4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5DDA656019889CE100E510C4 /* JHN_CurveFormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHN_CurveFormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DDA656119889CE100E510C4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5DDA656919889CE100E510C4 /* JHN_CurveFormTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JHN_CurveFormTests-Info.plist"; sourceTree = "<group>"; };
+		5DDA656B19889CE100E510C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5DDA656D19889CE100E510C4 /* JHN_CurveFormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHN_CurveFormTests.m; sourceTree = "<group>"; };
+		5DDA657F1988A60600E510C4 /* JHN_CurveForm_View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHN_CurveForm_View.h; sourceTree = "<group>"; };
+		5DDA65801988A60600E510C4 /* JHN_CurveForm_View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHN_CurveForm_View.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DDA653C19889CE100E510C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DDA654519889CE100E510C4 /* CoreGraphics.framework in Frameworks */,
+				5DDA654719889CE100E510C4 /* UIKit.framework in Frameworks */,
+				5DDA654319889CE100E510C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DDA655D19889CE100E510C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DDA656219889CE100E510C4 /* XCTest.framework in Frameworks */,
+				5DDA656419889CE100E510C4 /* UIKit.framework in Frameworks */,
+				5DDA656319889CE100E510C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DDA653619889CE100E510C4 = {
+			isa = PBXGroup;
+			children = (
+				5DDA654819889CE100E510C4 /* JHN_CurveForm */,
+				5DDA656719889CE100E510C4 /* JHN_CurveFormTests */,
+				5DDA654119889CE100E510C4 /* Frameworks */,
+				5DDA654019889CE100E510C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DDA654019889CE100E510C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DDA653F19889CE100E510C4 /* JHN_CurveForm.app */,
+				5DDA656019889CE100E510C4 /* JHN_CurveFormTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DDA654119889CE100E510C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DDA654219889CE100E510C4 /* Foundation.framework */,
+				5DDA654419889CE100E510C4 /* CoreGraphics.framework */,
+				5DDA654619889CE100E510C4 /* UIKit.framework */,
+				5DDA656119889CE100E510C4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DDA654819889CE100E510C4 /* JHN_CurveForm */ = {
+			isa = PBXGroup;
+			children = (
+				5DDA657E1988A60600E510C4 /* JHN_CurveForm_View */,
+				5DDA655119889CE100E510C4 /* JHNAppDelegate.h */,
+				5DDA655219889CE100E510C4 /* JHNAppDelegate.m */,
+				5DDA655419889CE100E510C4 /* Main.storyboard */,
+				5DDA655719889CE100E510C4 /* JHNViewController.h */,
+				5DDA655819889CE100E510C4 /* JHNViewController.m */,
+				5DDA655A19889CE100E510C4 /* Images.xcassets */,
+				5DDA654919889CE100E510C4 /* Supporting Files */,
+			);
+			path = JHN_CurveForm;
+			sourceTree = "<group>";
+		};
+		5DDA654919889CE100E510C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DDA654A19889CE100E510C4 /* JHN_CurveForm-Info.plist */,
+				5DDA654B19889CE100E510C4 /* InfoPlist.strings */,
+				5DDA654E19889CE100E510C4 /* main.m */,
+				5DDA655019889CE100E510C4 /* JHN_CurveForm-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DDA656719889CE100E510C4 /* JHN_CurveFormTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DDA656D19889CE100E510C4 /* JHN_CurveFormTests.m */,
+				5DDA656819889CE100E510C4 /* Supporting Files */,
+			);
+			path = JHN_CurveFormTests;
+			sourceTree = "<group>";
+		};
+		5DDA656819889CE100E510C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DDA656919889CE100E510C4 /* JHN_CurveFormTests-Info.plist */,
+				5DDA656A19889CE100E510C4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DDA657E1988A60600E510C4 /* JHN_CurveForm_View */ = {
+			isa = PBXGroup;
+			children = (
+				5DDA657F1988A60600E510C4 /* JHN_CurveForm_View.h */,
+				5DDA65801988A60600E510C4 /* JHN_CurveForm_View.m */,
+			);
+			path = JHN_CurveForm_View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DDA653E19889CE100E510C4 /* JHN_CurveForm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DDA657119889CE100E510C4 /* Build configuration list for PBXNativeTarget "JHN_CurveForm" */;
+			buildPhases = (
+				5DDA653B19889CE100E510C4 /* Sources */,
+				5DDA653C19889CE100E510C4 /* Frameworks */,
+				5DDA653D19889CE100E510C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JHN_CurveForm;
+			productName = JHN_CurveForm;
+			productReference = 5DDA653F19889CE100E510C4 /* JHN_CurveForm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DDA655F19889CE100E510C4 /* JHN_CurveFormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DDA657419889CE100E510C4 /* Build configuration list for PBXNativeTarget "JHN_CurveFormTests" */;
+			buildPhases = (
+				5DDA655C19889CE100E510C4 /* Sources */,
+				5DDA655D19889CE100E510C4 /* Frameworks */,
+				5DDA655E19889CE100E510C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DDA656619889CE100E510C4 /* PBXTargetDependency */,
+			);
+			name = JHN_CurveFormTests;
+			productName = JHN_CurveFormTests;
+			productReference = 5DDA656019889CE100E510C4 /* JHN_CurveFormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DDA653719889CE100E510C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JHN;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = cn.wenzhou;
+				TargetAttributes = {
+					5DDA655F19889CE100E510C4 = {
+						TestTargetID = 5DDA653E19889CE100E510C4;
+					};
+				};
+			};
+			buildConfigurationList = 5DDA653A19889CE100E510C4 /* Build configuration list for PBXProject "JHN_CurveForm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DDA653619889CE100E510C4;
+			productRefGroup = 5DDA654019889CE100E510C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DDA653E19889CE100E510C4 /* JHN_CurveForm */,
+				5DDA655F19889CE100E510C4 /* JHN_CurveFormTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DDA653D19889CE100E510C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DDA655B19889CE100E510C4 /* Images.xcassets in Resources */,
+				5DDA654D19889CE100E510C4 /* InfoPlist.strings in Resources */,
+				5DDA655619889CE100E510C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DDA655E19889CE100E510C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DDA656C19889CE100E510C4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DDA653B19889CE100E510C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DDA654F19889CE100E510C4 /* main.m in Sources */,
+				5DDA65811988A60600E510C4 /* JHN_CurveForm_View.m in Sources */,
+				5DDA655919889CE100E510C4 /* JHNViewController.m in Sources */,
+				5DDA655319889CE100E510C4 /* JHNAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DDA655C19889CE100E510C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DDA656E19889CE100E510C4 /* JHN_CurveFormTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DDA656619889CE100E510C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DDA653E19889CE100E510C4 /* JHN_CurveForm */;
+			targetProxy = 5DDA656519889CE100E510C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DDA654B19889CE100E510C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DDA654C19889CE100E510C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5DDA655419889CE100E510C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DDA655519889CE100E510C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DDA656A19889CE100E510C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DDA656B19889CE100E510C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DDA656F19889CE100E510C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5DDA657019889CE100E510C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DDA657219889CE100E510C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JHN_CurveForm/JHN_CurveForm-Prefix.pch";
+				INFOPLIST_FILE = "JHN_CurveForm/JHN_CurveForm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5DDA657319889CE100E510C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JHN_CurveForm/JHN_CurveForm-Prefix.pch";
+				INFOPLIST_FILE = "JHN_CurveForm/JHN_CurveForm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5DDA657519889CE100E510C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JHN_CurveForm.app/JHN_CurveForm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JHN_CurveForm/JHN_CurveForm-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JHN_CurveFormTests/JHN_CurveFormTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5DDA657619889CE100E510C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JHN_CurveForm.app/JHN_CurveForm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JHN_CurveForm/JHN_CurveForm-Prefix.pch";
+				INFOPLIST_FILE = "JHN_CurveFormTests/JHN_CurveFormTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DDA653A19889CE100E510C4 /* Build configuration list for PBXProject "JHN_CurveForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DDA656F19889CE100E510C4 /* Debug */,
+				5DDA657019889CE100E510C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DDA657119889CE100E510C4 /* Build configuration list for PBXNativeTarget "JHN_CurveForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DDA657219889CE100E510C4 /* Debug */,
+				5DDA657319889CE100E510C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5DDA657419889CE100E510C4 /* Build configuration list for PBXNativeTarget "JHN_CurveFormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DDA657519889CE100E510C4 /* Debug */,
+				5DDA657619889CE100E510C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DDA653719889CE100E510C4 /* Project object */;
+}
