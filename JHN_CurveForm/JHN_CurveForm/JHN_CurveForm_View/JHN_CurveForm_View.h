@@ -26,6 +26,7 @@ typedef enum {
 //返回线的颜色
 //默认为黑色
 -(UIColor *)CurveFormView:(JHN_CurveForm_View *)JHN_CurveForm_View ColorForInt:(int)index;
+//-(NSString *)CurveFormView:(JHN_CurveForm_View *)JHN_CurveForm_View YTitleForInt:(int)index;
 @end
 
 @interface JHN_CurveForm_View : UIView

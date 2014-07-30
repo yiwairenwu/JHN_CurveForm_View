@@ -56,9 +56,12 @@
         CGPathMoveToPoint(spadePath, NULL, nextX, downToXline - [[_LineArray objectAtIndex:0] doubleValue]*coefficient);
         if (_delegate&&[_delegate respondsToSelector:@selector(CurveFormView:ButtonForLineId:WithButtonId:)]) {
             UIButton *btn0 = [_delegate CurveFormView:self ButtonForLineId:num WithButtonId:0];
-             btn0.frame = CGRectMake(nextX-7, downToXline - [[_LineArray objectAtIndex:0] doubleValue]*coefficient-7, 15, 15);
-            [self addSubview:btn0];
-            [_btnArr addObject:btn0];
+            if (btn0) {
+                btn0.frame = CGRectMake(nextX-7, downToXline - [[_LineArray objectAtIndex:0] doubleValue]*coefficient-7, 15, 15);
+                [self addSubview:btn0];
+                [_btnArr addObject:btn0];
+            }
+            
         }
         
        
@@ -70,9 +73,12 @@
             
             if (_delegate&&[_delegate respondsToSelector:@selector(CurveFormView:ButtonForLineId:WithButtonId:)]) {
                 UIButton *btn = [_delegate CurveFormView:self ButtonForLineId:num WithButtonId:i];
-                 btn.frame = CGRectMake(nextX+distanceNextYline-7,downToXline - [[_LineArray objectAtIndex:i] doubleValue]*coefficient-7, 15, 15);
-                [self addSubview:btn];
-                [_btnArr addObject:btn];
+                if (btn) {
+                    btn.frame = CGRectMake(nextX+distanceNextYline-7,downToXline - [[_LineArray objectAtIndex:i] doubleValue]*coefficient-7, 15, 15);
+                    [self addSubview:btn];
+                    [_btnArr addObject:btn];
+                }
+                
             }
           
             switch (_LineType) {

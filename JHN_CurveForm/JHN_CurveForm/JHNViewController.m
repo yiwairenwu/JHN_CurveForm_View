@@ -12,6 +12,7 @@
 {
     NSArray *_fistArray;
     NSArray *_twoArray;
+    NSArray *_threeArray;
     JHN_CurveForm_View *_jhn;
 }
 @end
@@ -24,12 +25,13 @@
     //[self.view setBackgroundColor:[UIColor redColor]];透明的打开你就知道怎么回事了在相同位置让美工给你做个背景就ok
     _fistArray = @[[NSNumber numberWithInt:248888],[NSNumber numberWithInt:250000],[NSNumber numberWithInt:265520],[NSNumber numberWithInt:240300],[NSNumber numberWithInt:258000]];
     _twoArray = @[[NSNumber numberWithInt:280000],[NSNumber numberWithInt:275000],[NSNumber numberWithInt:270000],[NSNumber numberWithInt:260000],[NSNumber numberWithInt:274000]];
+    _threeArray = @[[NSNumber numberWithInt:288888],[NSNumber numberWithInt:288888],[NSNumber numberWithInt:288888],[NSNumber numberWithInt:288888],[NSNumber numberWithInt:288888]];
     _jhn = [[JHN_CurveForm_View alloc]init];
     [_jhn setBackgroundColor:[UIColor yellowColor]];
     _jhn.delegate = self;
     [_jhn setFrame:CGRectMake(35, 50, 280, 200)];
     
-    
+    [self addTitle];
     [self.view addSubview:_jhn];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -38,20 +40,43 @@
 {
      jhnBtn *btn   = [jhnBtn buttonWithType:UIButtonTypeCustom];
     if (indexLine == 0) {
-       
+        [btn setBackgroundImage:[UIImage imageNamed:@"sb.png"] forState:UIControlStateNormal];
+        [btn addTarget:self action:@selector(btnChick:) forControlEvents:UIControlEventTouchUpInside];
+        return btn;
         btn.indexLine = 0;
         btn.indexBtn = indexBtn;
       
-    }else{
+    }else if(indexLine==1){
         btn.indexLine = 1;
         btn.indexBtn = indexBtn;
-       
+        [btn setBackgroundImage:[UIImage imageNamed:@"sb.png"] forState:UIControlStateNormal];
+        [btn addTarget:self action:@selector(btnChick:) forControlEvents:UIControlEventTouchUpInside];
+        return btn;
         
     }
-    [btn setBackgroundImage:[UIImage imageNamed:@"sb.png"] forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(btnChick:) forControlEvents:UIControlEventTouchUpInside];
-    return btn;
-   
+    
+    return nil;
+}
+-(void)addTitle
+{
+    NSArray *arr = @[@"1月",@"2月",@"3月",@"4月",@"5月"];
+    NSArray *arr2 = @[@"24万",@"25万",@"26万",@"27万",@"28万",@"29万"];//最大减最小一定要等于-(double)YScopeForCurveFormView:(JHN_CurveForm_View *)JHN_CurveForm_View返回的值
+    float startY =  _jhn.frame.origin.y + _jhn.frame.size.height;
+    float startx = _jhn.frame.origin.x;
+    for (int i = 0 ; i<arr.count; i++) {
+        UILabel *lable = [[UILabel alloc]init];
+        
+        lable.text = [arr objectAtIndex:i];
+        lable.frame = CGRectMake(startx+(_jhn.frame.size.width/(_fistArray.count-1))*i-20, startY, 40, 40);
+        [self.view addSubview:lable];
+    }
+    for (int i = 0 ; i<arr2.count; i++) {
+        UILabel *lable = [[UILabel alloc]init];
+        
+        lable.text = [arr2 objectAtIndex:i];
+        lable.frame = CGRectMake(startx-40, startY-(_jhn.frame.size.height/(arr2.count-1))*i-20, 40, 40);
+        [self.view addSubview:lable];
+    }
 }
 -(void)btnChick:(UIButton *)sender
 {
@@ -78,6 +103,7 @@
 //返回x轴每组数据间距;
 -(double)XlongForCurveFormView:(JHN_CurveForm_View *)JHN_CurveForm_View
 {
+    
     return _jhn.frame.size.width/(_fistArray.count-1);
 }
 //返回数组
@@ -85,9 +111,11 @@
     if (index == 0) {
         
         return _fistArray;
-    }else{
+    }else if(index == 1){
         
         return _twoArray;
+    }else{
+        return _threeArray;
     }
     
 }
@@ -103,7 +131,7 @@
 }
 -(NSInteger )numberOfLinesInCurveFormView:(JHN_CurveForm_View *)JHN_CurveForm_View
 {
-    return 2;
+    return 3;
 }
 - (void)didReceiveMemoryWarning
 {
